@@ -1,6 +1,6 @@
 
 ## Configuring Active Directory Domain Services
-This tutorial outlines the implementation of Active Directory. The home lab I used throughout this project, which features two Windows virtual machines in a private subnet, can be created in AWS by following my tutorial [here]().
+This tutorial outlines the implementation of Active Directory. The home lab I used throughout this project, which features two Windows virtual machines in a private subnet, can be created in AWS by following my tutorial [here](https://github.com/susconnor/AWS-CloudFormation-HomeLab).
 
 ### Environments and Technologies Used
 - Amazon Web Services (AWS) 
@@ -56,7 +56,7 @@ It is important to decide on a naming convention for the username and stick with
 
 ![create admin user](AD-images/s11.png)
 
-Once the user has been created, right click on it and select **Properties**. Navigate to the **Member Of** tab and select **Add** to add user to the **Domain Admins** security group.
+Once the user has been created, right-click on it and select **Properties**. Navigate to the **Member Of** tab and select **Add** to add user to the **Domain Admins** security group.
 
 ![add to domain admins security group](AD-images/s12.png)
 
@@ -79,7 +79,7 @@ Enter *myhomelab.com* and provide the necessary credentials. Once this is comple
 ![log in screen](AD-images/s17.png)
 
 ## Creating Users Using PowerShell
-Next we will create five users, this time using the command line. I've provided a PowerShell script with five names hard coded. 
+Next, we will create five users, this time using the command line. I've provided a PowerShell script with five names hard coded. 
 
 ```powershell
 $PASSWORD_FOR_USERS = Read-Host "Enter default password" -AsSecureString 
